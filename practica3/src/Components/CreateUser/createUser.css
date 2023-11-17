@@ -1,0 +1,90 @@
+.registerForm{
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.registerForm h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.registerField{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.registerField label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(30, 30, 30, 0.8);
+}
+
+.registerField input {
+    border: 1px solid #87C4FF;
+    border-radius: 0.25rem;
+    height: 40px;
+    padding-inline: 0.5rem; /*Padding horizontal*/
+}
+
+.submitButton{
+    text-align: end;
+    margin-top: 2rem;
+}
+
+.registerForm button{
+    background-color: #39A7FF;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.formErrorMessage{
+    font-size: 0.8rem;
+    color: rgb(243, 75, 75);
+}
+
+.mensajeExito{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #39A7FF;
+}
+
+/* 
+
+padding: y(vertical) x(horizontal);
+
+¿Para que usamos el rem?
+
+font-size: 1rem;
+margin: 2rem;
+padding: 5rem;
+gap: 2rem;
+border-radius: 2rem;
+
+Para hacer un circulo, debo usar:
+border-radius: 50%;
+
+ */
+
+ @media (min-width: 650px){
+    .registerForm{
+        width: 600px;
+    }
+ }
+ 
+ @media (max-width: 650px){
+    .registerForm{
+        width: 90%;
+    }
+ }
