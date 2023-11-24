@@ -1,11 +1,13 @@
 import React from 'react'
-import CreateUser from '../../Components/CreateUser/CreateUser'
+import './home.css'
+import GrillaProductos from '../../Components/GrillaProductos/GrillaProductos'
 
 function Home() {
 
     return (
     <>
-        <CreateUser/>
+        <h1 className='tituloProductos'>PRODUCTOS</h1>
+        <GrillaProductos />
     </>
     )
 }

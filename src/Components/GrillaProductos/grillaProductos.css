@@ -1,0 +1,55 @@
+.contenedorCards{
+    margin: auto;
+    background-color: red;
+    /* El margin: auto; siempre va a arriba de todos los margenes, porque los sobreescribe */
+    margin-top: 2rem;
+    width: 1200px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap; /*  Si no entra el contenido, que siga abajo */
+    gap: calc((100% - 23%*4)/3);
+    row-gap: 2rem;
+}
+
+.card{
+    background-color: white;
+    width: 23%;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    /* padding: 0.5rem 1.5rem 0.5rem 1.5rem; ES LO MISMO QUE EL DE ARRIBA, PORQUE LOS VALORES SON IGUALES*/
+}
+
+.card img{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.card h2{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -3px;
+    font-weight: 600;
+}
+
+.card h3{
+    margin-top: 1rem;
+    text-align: end;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.botonVerMas{
+    text-align: end;
+}
+
+.botonVerMas button{
+    margin-top: 1rem;
+    background-color: #BB2525;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    /* En los botones, siempre el padding vertical sera menor al horizontal */
+    border-radius: 0.5rem;
+}
