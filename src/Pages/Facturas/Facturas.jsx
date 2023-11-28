@@ -85,7 +85,7 @@ function Facturas() {
                                             {...register("search",{
                                                 required: true
                                             })}
-                                            onChange={filtrarEnVivo}
+                                            // onChange={filtrarEnVivo}
                                             placeholder='Buscar...' className='form-control' name="search" id="busquedaModalClientes" />
                                         <button type="submit">
                                             <img src={searchIcon} alt="Buscar Clientes" />
