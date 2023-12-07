@@ -25,8 +25,13 @@ function BuscadorCliente(props) {
     return (
     <>
         <div className='w-100 text-end'>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAñadirCliente">
-                Añadir
+            <button type="button" className="btn btn-primary btnBuscarCliente" data-bs-toggle="modal" data-bs-target="#modalAñadirCliente">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+                <span>Buscar cliente</span>
             </button>
         </div>
 

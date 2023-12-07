@@ -3,60 +3,34 @@ import './facturas.css'
 import { faker } from '@faker-js/faker';
 import BuscadorCliente from '../../Components/BuscadorCliente/BuscadorCliente';
 import FacturaCard from '../../Components/FacturaCard/FacturaCard';
+import FormClienteFacturas from '../../Components/FormClienteFacturas/FormClienteFacturas';
 
 function Facturas() {
 
     const [clienteSeleccionado, setClienteSeleccionado] = useState()
     const [clientes, setClientes] = useState([])
 
+
+    // nombre
+    // direccion
+    // correo
+    // telefono
+    // ruc
+
     const getClientes = () => {
-        const db = [
-            {
+        let db = []
+        for (let i = 0; i < 30; i++) {
+            const newCostumer = {
                 name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-            {
-                name: faker.person.fullName(),
-                mail: faker.internet.email(),
-                street: faker.location.street()
-            },
-        ]
+                email: faker.internet.email(),
+                country: faker.location.country(),
+                city: faker.location.city(),
+                street: faker.location.streetAddress({ useFullAddress: true }),
+                phoneNumber: faker.phone.number(),
+                ruc: faker.string.numeric({length: 6})
+            }
+            db.push(newCostumer)
+        }
         setClientes(db)
     }
 
@@ -69,7 +43,8 @@ function Facturas() {
         <section className='contenedorFacturas'>
             <h1>Crear Factura</h1>
             <BuscadorCliente clientes={clientes} clienteSeleccionado={clienteSeleccionado} setClienteSeleccionado={setClienteSeleccionado}/>
-            <FacturaCard clienteSeleccionado={clienteSeleccionado}/>
+            <FormClienteFacturas clienteSeleccionado={clienteSeleccionado}/>
+            {/* <FacturaCard clienteSeleccionado={clienteSeleccionado}/> */}
         </section>
     </>
     )

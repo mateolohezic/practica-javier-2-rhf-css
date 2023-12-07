@@ -16,6 +16,8 @@ function FacturaCard(props) {
                     <h3>Nombre Completo: <b>{props.clienteSeleccionado.name}</b></h3>
                     <h3>Correo Electronico: <b>{props.clienteSeleccionado.mail}</b></h3>
                     <h3>Calle: <b>{props.clienteSeleccionado.street}</b></h3>
+                    <h3>Teléfono: <b>{props.clienteSeleccionado.phoneNumber}</b></h3>
+                    <h3>RUC: <b>{props.clienteSeleccionado.ruc}</b></h3>
                 </>
             }
         </article>

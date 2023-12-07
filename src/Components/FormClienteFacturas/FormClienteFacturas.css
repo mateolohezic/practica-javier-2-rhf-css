@@ -1,0 +1,39 @@
+.contenedorFormClientesFacutas{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.contenedorFormClientesFacutas h2{
+    width: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.inputGroupFormClienteFacturas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.inputGroupFormClienteFacturas:not(:first-child){
+    margin-top: 1rem;
+}
+
+.inputGroupFormClienteFacturas .inputFormClienteFacturas{
+    width: calc(50% - 1rem);
+    margin-top: 0rem;
+}
+
+.inputFormClienteFacturas{
+    margin-top: 1rem;
+}
+
+.form-control.inputDesactivadoClienteFacturas{
+    background-color: rgb(31, 31, 31, 0.25);
+    color: rgb(31, 31, 31, 0.6);
+}
