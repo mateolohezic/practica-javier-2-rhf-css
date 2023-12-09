@@ -2,6 +2,10 @@
     margin-right: 0.5rem;
 }
 
+.btnBuscarCliente{
+    white-space: nowrap;
+}
+
 .modalClientes h1{
     font-size: 2rem;
     font-weight: 700;
@@ -40,9 +44,28 @@
     align-items: center;
 }
 
-.cardClientesModal h2{
+.cardClientesModal div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+
+.cardClientesModal div h2{
     color: rgb(255, 255, 255);
     font-weight: 300;
+    font-size: 2rem;
+}
+
+.cardClientesModal div h3{
+    color: rgb(255, 255, 255, 0.4);
+    font-weight: 300;
+    font-size: 1rem;
+    position: relative;
+    top: -4px;
+    white-space: nowrap;
 }
 
 .cardClientesModal button{

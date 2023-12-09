@@ -37,3 +37,19 @@
     background-color: rgb(31, 31, 31, 0.25);
     color: rgb(31, 31, 31, 0.6);
 }
+
+.headerFormClienteFacturas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerFormClienteFacturas h2{
+    flex-grow: 1;
+}
+
+.botonBloquearClienteFacturas img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
