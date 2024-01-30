@@ -5,6 +5,7 @@ import BuscadorCliente from '../../Components/BuscadorCliente/BuscadorCliente';
 import FacturaCard from '../../Components/FacturaCard/FacturaCard';
 import FormClienteFacturas from '../../Components/FormClienteFacturas/FormClienteFacturas';
 import BuscadorProductos from '../../Components/BuscadorProductos/BuscadorProductos';
+import HOC from '../../Components/HOC/HOC';
 
 function Facturas() {
 
@@ -83,6 +84,10 @@ function Facturas() {
             </section>
             {/* <FacturaCard clienteSeleccionado={clienteSeleccionado}/> */}
         </section>
+        <HOC>
+            <h2 className='text-white'>Hola soy un hijo</h2>
+            <h3 className='text-white'>hola</h3>
+        </HOC>
     </>
     )
 }
