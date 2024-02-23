@@ -16,7 +16,7 @@ export const Ventas = () => {
                     <section className='flex flex-col justify-start items-center'>
                         <h2 className='font-semibold md:font-normal w-full bg-blue-500 text-white px-4 py-4 rounded-xl md:rounded-t-xl md:rounded-b-none text-xl text-center md:text-start md:text-2xl'>VENTAS</h2>
                         <p className='text-zinc-400 text-center py-4 w-full md:w-3/4 px-2 md:px-0 text-xs md:text-base'>El valor de ventas que se muestra en Información Fiscal proviene de Facturación Electrónica, y corresponde al total de sus transacciones; distribuya este valor en los caiselleros de acuerdo a su necesidad</p>
-                        <div className='overflow-x-scroll max-w-full w-full'>
+                        <div className='overflow-x-auto max-w-full w-full'>
                             <table className='border-collapse w-[1200px]'>
                                 <thead>
                                     <tr>
