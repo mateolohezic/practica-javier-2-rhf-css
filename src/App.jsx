@@ -7,6 +7,7 @@ import ProtectedRoute from './Hooks/ProtectedRoute'
 import Login from './Pages/Login/Login'
 import Facturas from './Pages/Facturas/Facturas'
 import VisualizadorFactura from './Pages/VisualizadorFactura/VisualizadorFactura'
+import { Ventas } from './Pages/Ventas/Ventas'
 
 
 
@@ -47,6 +48,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/" element={<Facturas/>}/>
+        <Route path="/ventas" element={<Ventas/>}/>
         <Route path="/register" element={<ProtectedRoute Component={Home}/>}/>
         <Route path="/admin" element={<ProtectedRoute Component={Admin}/>}/>
         <Route path="/facturas" element={<Facturas/>}/>

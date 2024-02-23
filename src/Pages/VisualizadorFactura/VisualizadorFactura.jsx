@@ -22,7 +22,7 @@ function VisualizadorFactura() {
 
 
     const getData = async () => {
-        const response = await fetch('https://calero-app-back-b4f35bcf8e81.herokuapp.com/api/v1.0/recibidos/facturas/ABCD/AB01/a6f291ce-bf3b-4f08-bada-fe0afaf70720');
+        const response = await fetch('https://calero-app-back-b4f35bcf8e81.herokuapp.com/api/v1.0/recibidos/facturas/ABCD/AB01/8976908e-cf15-4f6c-a8ca-cbe566bb1c01');
         const data = await response.json();
         const xmlPure = data.xml.slice(9).slice(0, -3);
         const xml = xmlJs.xml2json(xmlPure.toString(), { compact: true, spaces: 4 });
